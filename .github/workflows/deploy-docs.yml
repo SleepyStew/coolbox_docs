@@ -29,6 +29,9 @@ jobs:
         with:
           node-version: 18
           cache: pnpm
+          
+      - name: Install dependencies
+        run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
 
 
       - name: Build Docs
