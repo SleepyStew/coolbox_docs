@@ -1,29 +1,32 @@
-
-name: Deploy Docs
+name: Deploy Github Docs
 
 on:
-  push:
-    branches:
-      # make sure this is the branch you are using
-      - master
+  workflow_call:
+    secrets:
+      ACCESS_TOKEN:
+        required: true
 
 jobs:
-  deploy-gh-pages:
+  deploy-github-pages:
+    name: Deploy V2 docs to GitHub pages
     runs-on: ubuntu-latest
+    if: github.repository == 'vuepress-theme-hope/vuepress-theme-hope'
     steps:
       - name: Checkout
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
-          # if your docs needs submodules, uncomment the following line
-          # submodules: true
+          submodules: true
+
+      - name: Restore Build Result
+        uses: actions/download-artifact@v3
+        with:
+          name: build-result
 
       - name: Install pnpm
         uses: pnpm/action-setup@v2
         with:
-          version: 6.0.2
           run_install: true
-
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
@@ -31,26 +34,40 @@ jobs:
           node-version: 18
           cache: pnpm
 
-      - name: Build Docs
+      - name: Docs build
         env:
           NODE_OPTIONS: --max_old_space_size=8192
-        run: |-
-          pnpm run docs:build
-          > src/.vuepress/dist/.nojekyll
+        run: pnpm run docs:vite-build
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+      - name: Combine output
+        run: |
+          pnpm cpx "docs/auto-catalog/dist/**" dist/auto-catalog
+          pnpm cpx "docs/blog2/dist/**" dist/blog
+          pnpm cpx "docs/comment2/dist/**" dist/comment
+          pnpm cpx "docs/components/dist/**" dist/components
+          pnpm cpx "docs/copy-code2/dist/**" dist/copy-code
+          pnpm cpx "docs/copyright2/dist/**" dist/copyright
+          pnpm cpx "docs/feed2/dist/**" dist/feed
+          pnpm cpx "docs/lightgallery/dist/**" dist/lightgallery
+          pnpm cpx "docs/md-enhance/dist/**" dist/md-enhance
+          pnpm cpx "docs/photo-swipe/dist/**" dist/photo-swipe
+          pnpm cpx "docs/pwa2/dist/**" dist/pwa
+          pnpm cpx "docs/reading-time2/dist/**" dist/reading-time
+          pnpm cpx "docs/remove-pwa/dist/**" dist/remove-pwa
+          pnpm cpx "docs/redirect/dist/**" dist/redirect
+          pnpm cpx "docs/rtl/dist/**" dist/rtl
+          pnpm cpx "docs/sass-palette/dist/**" dist/sass-palette
+          pnpm cpx "docs/search-pro/dist/**" dist/search-pro
+          pnpm cpx "docs/seo2/dist/**" dist/seo
+          pnpm cpx "docs/shared/dist/**" dist/shared
+          pnpm cpx "docs/sitemap2/dist/**" dist/sitemap
+          pnpm cpx "docs/theme/dist/**" dist
+
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          path: src/.vuepress/dist
-
-  # Deployment job
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: deploy-gh-pages
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v1
+          repository-name: vuepress-theme-hope/v2
+          branch: gh-pages
+          folder: dist
+          token: ${{ secrets.ACCESS_TOKEN }}
+          single-commit: true
