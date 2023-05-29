@@ -2,7 +2,7 @@
 home: true
 icon: home
 title: Home
-heroImage: /logo.svg
+heroImage: /image.png
 heroText: CoolBox
 tagline: To make Schoolbox look good again.
 actions:
