@@ -20,7 +20,7 @@ features:
 
   - title: Coloured Tiles
     icon: palette
-    details: Brings back the vibrant tile gradients on the homepage.
+    details: Brings back the vibrant tile gradients on the homepage. Optional smooth animated tiles toggleable from settings.
 
   - title: Pretty Subjects
     icon: wand-magic-sparkles
