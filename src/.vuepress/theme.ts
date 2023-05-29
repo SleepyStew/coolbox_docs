@@ -16,6 +16,8 @@ export default hopeTheme({
 
   repo: "sleepystew/coolbox_docs",
 
+  docsBranch: "master",
+
   docsDir: "/src",
 
   locales: {
@@ -26,9 +28,9 @@ export default hopeTheme({
       // sidebar
       sidebar: enSidebar,
 
-      footer: "Default footer",
+      footer: "The CoolBox Project",
 
-      displayFooter: true,
+      displayFooter: false,
 
       metaLocales: {
         editLink: "Edit this page on GitHub",

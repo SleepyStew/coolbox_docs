@@ -22,6 +22,10 @@ features:
     icon: palette
     details: Brings back the vibrant tile gradients on the homepage.
 
+  - title: Pretty Subjects
+    icon: wand-magic-sparkles
+    details: Subject names now look nice, for example 10Engi1B becomes Engineering
+
   - title: Live Updating
     icon: sync
     details: Your timetable, due work, and news sections will all update live.
@@ -37,7 +41,7 @@ features:
   - title: Discord Server
     icon: fab fa-discord
     details: Suggest features, report bugs and find out about new updates on the official Discord server.
-    link: https://theme-hope.vuejs.press/guide/markdown/
+    link: https://discord.gg/a2JFDUZfDn
 
   - title: New Features Soon
     icon: plus
