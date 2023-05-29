@@ -17,5 +17,12 @@ export const enSidebar = sidebar({
       link: "docs",
       children: "structure",
     },
+    {
+      icon: "chart-simple",
+      text: "Stats",
+      prefix: "stats",
+      link: "stats",
+      children: "structure",
+    },
   ],
 });
