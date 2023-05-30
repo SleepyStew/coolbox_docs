@@ -1,5 +1,5 @@
 ---
-title: Stats
+title: Statistics
 index: false
 icon: chart-simple
 category:
