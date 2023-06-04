@@ -18,17 +18,21 @@ features:
     icon: bell
     details: Set reminders for yourself, and get notified when they are due. Can be set for assessments, and can be received via Desktop or Discord.
 
+  - title: Dark Mode
+    icon: circle-half-stroke
+    details: Fully functional dark mode across all pages of Schoolbox. Toggle between light & dark mode from settings.
+
   - title: Coloured Tiles
     icon: palette
-    details: Brings back the vibrant tile gradients on the homepage.
+    details: Brings back the vibrant tile gradients on the homepage. Features smooth animations with custom speeds, changed in settings.
 
   - title: Pretty Subjects
     icon: wand-magic-sparkles
-    details: Subject names now look nice, for example 10Engi1B becomes Engineering
+    details: Subject names now look nice, for example 10Engi1B becomes Engineering. Works across all of Schoolbox.
 
   - title: Live Updating
     icon: sync
-    details: Your timetable, due work, and news sections will all update live.
+    details: (Unfinished) Your timetable, due work, and news sections will all update live.
 
   - title: Timers
     icon: clock
