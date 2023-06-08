@@ -28,9 +28,9 @@ export default hopeTheme({
       // sidebar
       sidebar: enSidebar,
 
-      footer: "The CoolBox Project",
+      footer: "CoolBox is not endorsed by or affiliated with Donvale Christian College or Schoolbox Pty Ltd.",
 
-      displayFooter: false,
+      displayFooter: true,
 
       metaLocales: {
         editLink: "Edit this page on GitHub",
