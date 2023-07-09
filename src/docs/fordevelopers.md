@@ -18,6 +18,7 @@ Markdown - [CoolBox Docs](https://github.com/sleepystew/coolbox_docs)
 
 Javascript - [CoolBox Extension (Old)](https://github.com/T0RNATO/coolbox_extension)
 
+Python (PyCord) - [CoolBox Discord](https://github.com/SleepyStew/coolbox_discord)
 
 ## Customizing CoolBox
 If you would like to create your own addition or extend the functionality of CoolBox 
