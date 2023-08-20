@@ -12,7 +12,7 @@ category:
 
 <div style="gap: 10px; display: flex; width: fit-content;">
 
-![](https://img.shields.io/badge/dynamic/json?color=brightgreen&label=active%20users&query=count&url=https%3A%2F%2Fapi.coolbox.lol%2Fstats%2Fuser_count)
+![](https://img.shields.io/badge/dynamic/json?color=brightgreen&label=active%20users&query=active&url=https%3A%2F%2Fapi.coolbox.lol%2Fstats%2Fuser_count)
 
 ![](https://sonarcloud.io/api/project_badges/measure?project=SleepyStew_coolbox_backend&metric=alert_status)
 
