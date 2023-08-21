@@ -16,14 +16,14 @@ category:
 ## Entering Edit Mode
 Edit mode is key to using Coolbox to the max; without it, you might as well just use normal Schoolbox. To enter Edit mode, navigate to the top right of your Schoolbox page; there should be a pencil icon underneath the notification bell.
 
-![Schoolbox Image - Edit Mode](/EditMode.png)
+![Schoolbox Image - Edit Mode](https://coolbox.lol/EditMode.png)
 
 Just click that, and you will be entered into edit mode.
 
 ## Basic Navigation
 If the menu is confusing, or you're not too sure what to do, this section is for you:
 
-![Schoolbox Image - Menu Navigation](/MenuNavigation.png)
+![Schoolbox Image - Menu Navigation](https://coolbox.lol//MenuNavigation.png)
 
 1. (Green Tick) Press this button once you're done editing the homepage.
 2. (Blue '+') This is the most important button; it opens the widget menu where you can drag and drop widgets from (see 4/5 for more information).
