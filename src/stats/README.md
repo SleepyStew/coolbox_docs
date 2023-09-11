@@ -24,8 +24,8 @@ category:
 
 <div style="gap: 10px; display: flex; width: fit-content;">
 
-![](https://sonarcloud.io/api/project_badges/measure?project=T0RNATO_coolbox_extension&metric=alert_status)
+![](https://sonarcloud.io/api/project_badges/measure?project=T0RNATO_coolbox_extension_new&metric=alert_status)
 
-![](https://sonarcloud.io/api/project_badges/measure?project=T0RNATO_coolbox_extension&metric=ncloc)
+![](https://sonarcloud.io/api/project_badges/measure?project=T0RNATO_coolbox_extension_new&metric=ncloc)
 
 </div>
