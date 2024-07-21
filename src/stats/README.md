@@ -29,3 +29,7 @@ category:
 ![](https://sonarcloud.io/api/project_badges/measure?project=T0RNATO_coolbox_extension_new&metric=ncloc)
 
 </div>
+
+## Uptime Stats
+
+[Uptime Robot](https://stats.uptimerobot.com/lkljBH1VGz/794329015)
