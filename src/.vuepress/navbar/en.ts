@@ -26,5 +26,15 @@ export const enNavbar = navbar([
         text: "Stats",
         icon: "chart-simple",
         link: "/stats",
+    },
+    {
+        text: "Privacy",
+        icon: "eye-slash",
+        link: "/privacy",
+    },
+    {
+        text: "Terms",
+        icon: "book",
+        link: "/terms"
     }
 ]);
