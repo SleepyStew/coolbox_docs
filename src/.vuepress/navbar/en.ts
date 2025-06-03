@@ -23,6 +23,11 @@ export const enNavbar = navbar([
         link: "/docs",
     },
     {
+        text: "Install",
+        link: "/install/",
+        icon: "fas fa-download"
+    },
+    {
         text: "Stats",
         icon: "chart-simple",
         link: "/stats",

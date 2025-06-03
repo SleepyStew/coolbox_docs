@@ -32,7 +32,7 @@ features:
 
   - title: Live Updating
     icon: sync
-    details: (Unfinished) Your timetable, due work, and news sections will all update live.
+    details: Planned: Your timetable, due work, and news sections will all update live.
 
   - title: Timers
     icon: clock
@@ -49,6 +49,6 @@ features:
 
   - title: New Features Soon
     icon: plus
-    details: More features are planned to be added in the future, including custom themes and quick notes.
+    details: We're always working on new things! Future updates include: Custom Themes, Quick Notes, and more.
 
 ---
