@@ -36,5 +36,10 @@ export const enNavbar = navbar([
         text: "Terms",
         icon: "book",
         link: "/terms"
+    },
+    {
+        text: "Closure",
+        icon: "calendar-minus",
+        link: "/closure"
     }
 ]);
